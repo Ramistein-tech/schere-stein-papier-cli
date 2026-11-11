@@ -1,13 +1,25 @@
 # Rock-Paper-Scissors CLI (Pro Edition)
 
-An interactive Command-Line Interface (CLI) implementation of Rock-Paper-Scissors in Python, featuring RegEx input parsing, POSIX termios terminal control, and structured data handling.
+An interactive Command-Line Interface (CLI) game developed in Python for the *Coding Humanities* course at Eberhard Karls Universität Tübingen. Demonstrates POSIX `termios` terminal state protection, unbuffered keypress capture via `readchar`, RegEx name validation, and structured game logging using sets, tuples, and lists.
 
-## 🛠️ Technical Highlights
-- **Input Validation**: RegEx pattern matching for user options.
-- **Terminal I/O**: Low-level terminal handling with `readchar` and `termios`.
-- **Data Logic**: High-performance state evaluation using sets and tuples.
+## 🎮 Terminal Preview
 
-## 🚀 Usage
-```bash
-pip install readchar
-python main.py
+```text
+==================================================
+      SCHERE - STEIN - PAPIER (CODING HUMANITIES) 
+==================================================
+
+Wähle Modus (1: gegen Computer | 2: zwei Spieler): 1
+Name von Spieler 1 [Default: Ramistein]: Ramistein
+Wie viele Runden müssen gewonnen werden? 3
+
+Match gestartet: Ramistein VS Computer (Ziel: 3 Siege)
+
+--- RUNDE 1 ---
+Ramistein, wähle (w/e/r | x = Abbruch): 
+>> Ramistein hat verdeckt gewählt.
+>> Computer hat verdeckt gezogen.
+
+Auswertung: Ramistein (Stein) VS Computer (Schere)
+>> Ergebnis: Ramistein gewinnt diese Runde!
+Gesamtstand (Siege-Niederlagen-Unentschieden): 1-0-0
